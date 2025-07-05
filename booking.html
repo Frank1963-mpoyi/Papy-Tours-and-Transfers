@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papy Tours & Transfers | Premium Tours & Experiences</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+    <!-- Cookie Consent Banner -->
+    <div class="cookie-consent" id="cookieConsent">
+        <div class="cookie-text">
+            <p>We use cookies to enhance your experience on our website. By continuing to browse, you agree to our use of cookies. Learn more in our <a href="#">Privacy Policy</a>.</p>
+        </div>
+        <div class="cookie-buttons">
+            <button class="cookie-btn cookie-decline" id="declineCookies">Decline</button>
+            <button class="cookie-btn cookie-accept" id="acceptCookies">Accept</button>
+        </div>
+    </div>
+
+    <!-- Header with navigation -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <h1>Papy Tours &  <span>Transfers</span></h1>
+            </div>
+            <div style="display: flex; align-items: center;">
+                <div class="language-switcher">
+                    <button class="language-btn" id="languageBtn">
+                        <i class="fas fa-globe"></i> English
+                    </button>
+                    <div class="language-dropdown" id="languageDropdown">
+                        <button data-lang="en" class="active"><i class="fas fa-check"></i> English</button>
+                        <button data-lang="fr"><i class="fas fa-language"></i> Français</button>
+                        <button data-lang="pt"><i class="fas fa-language"></i> Português</button>
+                    </div>
+                </div>
+                <button class="mobile-menu-btn" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+           <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html" data-translate="home">Home</a></li>
+                    <!-- <li><a href="#about" data-translate="about">About Us</a></li> -->
+                    <!-- <li><a href="#tours" data-translate="tours">Tours</a></li> -->
+                    <!-- <li><a href="#testimonials" data-translate="testimonials">Testimonials</a></li> -->
+                    <li><a href="gallery.html" data-translate="gallery">Gallery</a></li>
+                    <!-- <li><a href="#booking" data-translate="booking">Booking</a></li> -->
+                    <li><a href="contact_us.html" data-translate="contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h2 data-translate="hero_title">Experience Cape Town Like Never Before</h2>
+            <p data-translate="hero_subtitle">Discover the Mother City with passionate local guides and create unforgettable memories</p>
+            <div class="btn-container">
+                <a href="#tours" class="btn btn-accent" data-translate="explore_tours">Explore Tours</a>
+                <!-- <a href="#booking" class="btn btn-outline" data-translate="book_now">Book Now</a> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-translate="about_title">About Cape Town Adventures</h2>
+                <p data-translate="about_subtitle">Your local experts in Cape Town tourism</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h3 data-translate="our_story">Our Story</h3>
+                    <p data-translate="story_text">Founded by passionate locals in 2015, Cape Town Adventures was born from a desire to share the beauty and diversity of our incredible city with the world. We believe in sustainable tourism that benefits both visitors and local communities.</p>
+                    
+                    <p data-translate="story_text2">With over 8 years of experience, our team of certified guides knows every corner of Cape Town - from the iconic Table Mountain to hidden gems only locals know about. We're committed to creating personalized experiences that go beyond the typical tourist path.</p>
+                    
+                    <h3 data-translate="why_choose">Why Choose Us</h3>
+                    <ul>
+                        <li><strong data-translate="local_expertise">Local Expertise:</strong> <span data-translate="expertise_text">Born and raised in Cape Town with deep local knowledge</span></li>
+                        <li><strong data-translate="personalized">Personalized Experiences:</strong> <span data-translate="personalized_text">Tailored tours to match your interests</span></li>
+                        <li><strong data-translate="sustainable">Sustainable Tourism:</strong> <span data-translate="sustainable_text">Supporting local communities and conservation</span></li>
+                        <li><strong data-translate="service">5-Star Service:</strong> <span data-translate="service_text">Dedicated to making your experience unforgettable</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tours Section -->
+    <section id="tours" class="section" style="background-color: #f5f9f5;">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-translate="popular_tours">Popular Tours & Experiences</h2>
+                <p data-translate="discover_tours">Discover Cape Town through our curated experiences</p>
+            </div>
+            
+            <div class="tours-grid">
+                <div class="tour-card">
+                    <div class="tour-badge">BEST SELLER</div>
+                    <div class="duration-badge">FULL DAY</div>
+                    <div class="tour-img">
+                        <img src="https://images.unsplash.com/photo-1592409065737-a253f290a70a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Cape Peninsula Tour">
+                    </div>
+                    <div class="tour-content">
+                        <h3 data-translate="peninsula_tour">Cape Peninsula Tour</h3>
+                        <p data-translate="peninsula_desc">Journey to the southernmost point of Africa with stunning coastal scenery. Visit Cape Point, Boulders Beach, and Chapman's Peak.</p>
+                        <div class="tour-meta">
+                            <span><i class="fas fa-clock"></i> <span data-translate="full_day">Full Day</span> (8-10 <span data-translate="hours">hours</span>)</span>
+                        </div>
+                        <div class="tour-price">R1,450 <span data-translate="per_person">per person</span></div>
+                        <a href="#booking" class="btn" style="padding: 8px 20px;" data-translate="book_now">Book Now</a>
+                    </div>
+                </div>
+                
+                <div class="tour-card">
+                    <div class="tour-badge">NEW</div>
+                    <div class="duration-badge">HALF DAY</div>
+                    <div class="tour-img">
+                        <img src="https://images.unsplash.com/photo-1568901343480-1d73b7a815c6?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Cape Peninsula Half Day">
+                    </div>
+                    <div class="tour-content">
+                        <h3 data-translate="peninsula_half">Cape Peninsula Half Day</h3>
+                        <p data-translate="peninsula_half_desc">Condensed version of our full peninsula tour. Visit highlights including Chapman's Peak and Hout Bay.</p>
+                        <div class="tour-meta">
+                            <span><i class="fas fa-clock"></i> <span data-translate="half_day">Half Day</span> (4-5 <span data-translate="hours">hours</span>)</span>
+                        </div>
+                        <div class="tour-price">R850 <span data-translate="per_person">per person</span></div>
+                        <a href="#booking" class="btn" style="padding: 8px 20px;" data-translate="book_now">Book Now</a>
+                    </div>
+                </div>
+                
+                <div class="tour-card">
+                    <div class="tour-badge">LUXURY</div>
+                    <div class="duration-badge">FULL DAY</div>
+                    <div class="tour-img">
+                        <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Winelands Tour">
+                    </div>
+                    <div class="tour-content">
+                        <h3 data-translate="winelands_tour">Winelands Luxury Tour</h3>
+                        <p data-translate="winelands_desc">Discover the Cape Winelands with premium tastings and gourmet lunch at Stellenbosch, Franschhoek, and Paarl estates.</p>
+                        <div class="tour-meta">
+                            <span><i class="fas fa-clock"></i> <span data-translate="full_day">Full Day</span> (7-8 <span data-translate="hours">hours</span>)</span>
+                        </div>
+                        <div class="tour-price">R1,850 <span data-translate="per_person">per person</span></div>
+                        <a href="#booking" class="btn" style="padding: 8px 20px;" data-translate="book_now">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-translate="testimonials_title">What Our Travelers Say</h2>
+                <p data-translate="testimonials_subtitle">Real experiences from our happy customers</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text" data-translate="testimonial1">
+                            "Our Table Mountain tour was the highlight of our South Africa trip. The guide's knowledge of the local flora and history made the experience truly special. We felt completely safe and cared for throughout the day."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Jennifer">
+                            </div>
+                            <div class="author-info">
+                                <h4>Jennifer & Mark</h4>
+                                <p data-translate="from_usa">From USA</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-meta">
+                            <div class="testimonial-date">
+                                <i class="far fa-calendar-alt"></i> <span data-translate="april_2023">April 15, 2023</span>
+                            </div>
+                            <div class="testimonial-tour" data-translate="table_mountain">Table Mountain Tour</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text" data-translate="testimonial2">
+                            "The Cape Peninsula tour exceeded all expectations! David was an exceptional guide who tailored the day to our interests. The scenery was breathtaking, and we learned so much about South Africa's history and culture."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="https://randomuser.me/api/portraits/men/54.jpg" alt="Thomas">
+                            </div>
+                            <div class="author-info">
+                                <h4>Thomas Müller</h4>
+                                <p data-translate="from_germany">From Germany</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-meta">
+                            <div class="testimonial-date">
+                                <i class="far fa-calendar-alt"></i> <span data-translate="june_2023">June 2, 2023</span>
+                            </div>
+                            <div class="testimonial-tour" data-translate="peninsula_tour">Cape Peninsula Tour</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text" data-translate="testimonial3">
+                            "The Winelands tour was absolutely perfect. We visited three beautiful vineyards and enjoyed gourmet food pairings. The guide's knowledge of wines made the experience educational and fun!"
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="https://randomuser.me/api/portraits/women/67.jpg" alt="Sophie">
+                            </div>
+                            <div class="author-info">
+                                <h4>Sophie Williams</h4>
+                                <p data-translate="from_australia">From Australia</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-meta">
+                            <div class="testimonial-date">
+                                <i class="far fa-calendar-alt"></i> <span data-translate="march_2023">March 22, 2023</span>
+                            </div>
+                            <div class="testimonial-tour" data-translate="winelands_tour">Winelands Tour</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section id="partners" class="section partners-section">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-translate="our_partners">Our Trusted Partners</h2>
+                <p data-translate="partner_subtitle">Collaborating with the best to enhance your experience</p>
+            </div>
+            
+            <div class="partners-grid">
+                <div class="partner-card">
+                    <div class="partner-logo">
+                        <i class="fas fa-plane-departure fa-3x" style="color: #1a5276;"></i>
+                    </div>
+                    <h3 data-translate="aviator">Aviator Airlines</h3>
+                    <p data-translate="aviator_desc">Exclusive flight deals for our international travelers</p>
+                </div>
+                
+                <div class="partner-card">
+                    <div class="partner-logo">
+                        <i class="fas fa-hotel fa-3x" style="color: #1a5276;"></i>
+                    </div>
+                    <h3 data-translate="safari_lodge">Safari Lodge Group</h3>
+                    <p data-translate="safari_desc">Premium accommodations near wildlife reserves</p>
+                </div>
+                
+                <div class="partner-card">
+                    <div class="partner-logo">
+                        <i class="fas fa-utensils fa-3x" style="color: #1a5276;"></i>
+                    </div>
+                    <h3 data-translate="culinary">Culinary Tours SA</h3>
+                    <p data-translate="culinary_desc">Gourmet experiences showcasing local cuisine</p>
+                </div>
+                
+                <div class="partner-card">
+                    <div class="partner-logo">
+                        <i class="fas fa-camera fa-3x" style="color: #1a5276;"></i>
+                    </div>
+                    <h3 data-translate="wildlife">Wildlife Photography Expeditions</h3>
+                    <p data-translate="wildlife_desc">Guided photography tours for nature enthusiasts</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-translate="gallery_title">Cape Town Gallery</h2>
+                <p data-translate="gallery_subtitle">Explore the beauty of South Africa's Mother City</p>
+            </div>
+            
+            <div class="gallery-grid">
+                <a href="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" data-lightbox="gallery" data-title="Table Mountain">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Table Mountain">
+                        <div class="gallery-caption">Table Mountain - Iconic landmark of Cape Town</div>
+                    </div>
+                </a>
+                <a href="https://images.unsplash.com/photo-1592409065737-a253f290a70a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" data-lightbox="gallery" data-title="Cape Point">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1592409065737-a253f290a70a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Cape Point">
+                        <div class="gallery-caption">Cape Point - Where two oceans meet</div>
+                    </div>
+                </a>
+                <a href="https://images.unsplash.com/photo-1568901343480-1d73b7a815c6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" data-lightbox="gallery" data-title="Winelands">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1568901343480-1d73b7a815c6?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Winelands">
+                        <div class="gallery-caption">Stellenbosch Winelands - World-class vineyards</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-translate="book_adventure">Book Your Adventure</h2>
+                <p data-translate="reserve_spot">Reserve your spot on our most popular tours</p>
+            </div>
+            
+            <div class="booking-section">
+                <form id="bookingForm">
+                    <div class="form-group">
+                        <label for="tourSelect" data-translate="select_tour">Select Tour *</label>
+                        <select id="tourSelect" class="form-select" required>
+                            <option value="" data-translate="choose_tour">Choose a tour</option>
+                            <option value="peninsula_full" data-translate="peninsula_full">Cape Peninsula Tour (Full Day - R1,450)</option>
+                            <option value="peninsula_half" data-translate="peninsula_half">Cape Peninsula Tour (Half Day - R850)</option>
+                            <option value="winelands_full" data-translate="winelands_full">Winelands Luxury Tour (Full Day - R1,850)</option>
+                        </select>
+                        <div class="error" id="tourSelectError" data-translate="select_tour_error">Please select a tour</div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="bookingDate" data-translate="tour_date">Tour Date *</label>
+                            <input type="date" id="bookingDate" class="form-control" required>
+                            <div class="error" id="bookingDateError" data-translate="select_date">Please select a date</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="participants" data-translate="participants">Number of Participants *</label>
+                            <select id="participants" class="form-select" required>
+                                <option value="" data-translate="select_number">Select number</option>
+                                <option value="1">1 <span data-translate="person">person</span></option>
+                                <option value="2">2 <span data-translate="people">people</span></option>
+                                <option value="3">3 <span data-translate="people">people</span></option>
+                            </select>
+                            <div class="error" id="participantsError" data-translate="select_participants">Please select number of participants</div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="bookingName" data-translate="full_name">Full Name *</label>
+                            <input type="text" id="bookingName" class="form-control" required>
+                            <div class="error" id="bookingNameError" data-translate="enter_name">Please enter your full name</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="bookingEmail" data-translate="email">Email Address *</label>
+                            <input type="email" id="bookingEmail" class="form-control" required>
+                            <div class="error" id="bookingEmailError" data-translate="valid_email">Please enter a valid email address</div>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-accent" data-translate="book_now">Book Now</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-translate="contact_us">Contact Us</h2>
+                <p data-translate="questions">Have questions? Our team is here to help</p>
+            </div>
+            
+            <div class="contact-section">
+                <form id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name" data-translate="full_name">Full Name *</label>
+                            <input type="text" id="name" class="form-control" required>
+                            <div class="error" id="nameError" data-translate="enter_name">Please enter your full name</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" data-translate="email">Email Address *</label>
+                            <input type="email" id="email" class="form-control" required>
+                            <div class="error" id="emailError" data-translate="valid_email">Please enter a valid email address</div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject" data-translate="subject">Subject *</label>
+                        <input type="text" id="subject" class="form-control" required>
+                        <div class="error" id="subjectError" data-translate="enter_subject">Please enter a subject</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message" data-translate="message">Message *</label>
+                        <textarea id="message" class="form-control" rows="5" required></textarea>
+                        <div class="error" id="messageError" data-translate="enter_message">Please enter your message</div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-accent" data-translate="send_message">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Papy Tours & Transfers</h3>
+                    <p data-translate="footer_desc">Creating unforgettable experiences in South Africa's most beautiful city through personalized tours and sustainable tourism.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="TripAdvisor"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 data-translate="quick_links">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home" data-translate="home">Home</a></li>
+                        <li><a href="#about" data-translate="about">About Us</a></li>
+                        <li><a href="#tours" data-translate="tours">Tours</a></li>
+                        <li><a href="#testimonials" data-translate="testimonials">Testimonials</a></li>
+                        <li><a href="#gallery" data-translate="gallery">Gallery</a></li>
+                        <li><a href="#booking" data-translate="booking">Booking</a></li>
+                        <li><a href="#contact" data-translate="contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 data-translate="popular_tours">Popular Tours</h3>
+                    <ul class="footer-links">
+                        <li><a href="#tours" data-translate="peninsula_tour">Cape Peninsula Tour</a></li>
+                        <li><a href="#tours" data-translate="winelands_tour">Winelands Luxury Tour</a></li>
+                        <li><a href="#tours" data-translate="table_mountain">City & Table Mountain</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 data-translate="contact_info">Contact Info</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Victoria Road, Cape Town</li>
+                        <li><i class="fas fa-phone"></i> +27 21 123 4567</li>
+                        <li><i class="fas fa-envelope"></i> info@capetownadventures.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Sun: 7AM - 7PM</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 . <span data-translate="all_rights">All rights reserved.</span> <span data-translate="designed">Designed by Mpoyi Tshibuyi</p>
+                <div class="timestamp">
+                    <span id="currentDate"></span>
+                    <span id="currentTime"></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Chat Button -->
+    <a href="https://wa.me/+27781114041" class="whatsapp-chat" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Chat Widget -->
+    <div class="chat-toggle" id="chatToggle">
+        <i class="fas fa-comments"></i>
+    </div>
+    
+    <div class="chat-widget" id="chatWidget">
+        <div class="chat-header">
+            <h3 data-translate="chat_title">Chat with us</h3>
+            <button class="chat-close" id="chatClose"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="chat-body" id="chatBody">
+            <div class="chat-message bot" data-translate="chat_welcome">
+                Hi there! 👋 Welcome to Cape Town Adventures. How can we help you today?
+            </div>
+            <div class="chat-message bot" data-translate="chat_help">
+                You can ask about tours, availability, prices, or anything else related to your Cape Town adventure!
+            </div>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="chatInput" placeholder="Type your message...">
+            <button id="chatSend"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <div class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    
+    <!-- Main JavaScript -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>
