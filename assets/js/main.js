@@ -382,3 +382,8 @@ declineCookies.addEventListener('click', function() {
     localStorage.setItem('cookieChoice', 'declined');
     cookieConsent.classList.remove('show');
 });
+
+
+// Add this to your main.js file document.addEventListener('DOMContentLoaded', function() { const whatsappBtn = document.querySelector('.whatsapp-chat'); if (whatsappBtn) { whatsappBtn.addEventListener('click', function(e) { e.preventDefault(); const phoneNumber = '27643355035'; const message = encodeURIComponent("Hello, I'm interested in your Cape Town tours and services."); const whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`; window.open(whatsappURL, '_blank'); }); } });
+
+document.addEventListener('DOMContentLoaded', function() { const whatsappBtn = document.querySelector('.whatsapp-chat'); if (whatsappBtn) { whatsappBtn.addEventListener('click', function(e) { e.preventDefault(); const phoneNumber = '27643355035'; const message = encodeURIComponent("Hello, I'm interested in your Cape Town tours and services."); const whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`; window.open(whatsappURL, '_blank'); }); } });
