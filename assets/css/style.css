@@ -195,7 +195,7 @@ nav ul li a:hover:after {
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 
-.btn {
+.btno {
     display: inline-block;
     background-color: var(--primary);
     color: var(--white);
@@ -271,10 +271,13 @@ nav ul li a:hover:after {
     font-size: 1.1rem;
 }
 
-/* ====== TOURS SECTION ====== */
+
+
+
+/* ====== TOURS SECTION UPDATES ====== */
 .tours-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 30px;
 }
 
@@ -285,6 +288,9 @@ nav ul li a:hover:after {
     box-shadow: var(--shadow);
     transition: var(--transition);
     position: relative;
+    display: flex;
+    flex-direction: column;
+    height: fit-content; /* Ensure consistent height */
 }
 
 .tour-card:hover {
@@ -302,6 +308,7 @@ nav ul li a:hover:after {
     border-radius: 20px;
     font-weight: 600;
     z-index: 2;
+    font-size: 0.8rem;
 }
 
 .duration-badge {
@@ -320,6 +327,7 @@ nav ul li a:hover:after {
 .tour-img {
     height: 200px;
     overflow: hidden;
+    flex-shrink: 0; /* Prevent image from shrinking */
 }
 
 .tour-img img {
@@ -334,13 +342,26 @@ nav ul li a:hover:after {
 }
 
 .tour-content {
-    padding: 25px;
+    padding: 20px;
+    flex-grow: 1; /* Allow content to grow evenly */
+    display: flex;
+    flex-direction: column;
 }
 
 .tour-content h3 {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
+    font-size: 1.4rem;
+    margin-bottom: 12px;
     color: var(--primary);
+    line-height: 1.3;
+    min-height: 3.5rem; /* Consistent title height */
+}
+
+.tour-content p {
+    color: var(--gray);
+    margin-bottom: 15px;
+    line-height: 1.5;
+    font-size: 0.95rem;
+    flex-grow: 1; /* Allow description to take available space */
 }
 
 .tour-meta {
@@ -351,18 +372,193 @@ nav ul li a:hover:after {
     color: var(--gray);
 }
 
-.tour-price {
-    font-weight: bold;
-    color: var(--primary);
-    font-size: 1.3rem;
-    margin: 10px 0;
+/* Multi-currency pricing grid */
+.pricing-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 15px;
+    flex-shrink: 0; /* Prevent pricing from shrinking */
 }
 
-.tour-price span {
-    font-size: 1rem;
-    color: var(--gray);
-    font-weight: normal;
+.pricing-option {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 12px;
+    text-align: center;
 }
+
+.option-title {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 8px;
+}
+
+.price {
+    font-weight: 700;
+    color: var(--accent);
+    font-size: 1.1rem;
+    margin-bottom: 2px;
+}
+
+.currency {
+    font-size: 0.8rem;
+    color: var(--gray);
+}
+
+.tour-highlights {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.tour-highlights h4 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: var(--primary);
+}
+
+.tour-highlights ul {
+    padding-left: 20px;
+    font-size: 0.9rem;
+    color: var(--gray);
+}
+
+.tour-highlights li {
+    margin-bottom: 5px;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    background: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: var(--transition);
+    margin-top: 15px;
+    flex-shrink: 0; /* Keep button at bottom */
+}
+
+.btn:hover {
+    background: #1a252f;
+}
+
+/* Add consistent min-height for all tour cards */
+.tour-card {
+    min-height: 550px; /* Set a minimum height for consistency */
+}
+
+@media (max-width: 768px) {
+    .tours-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .tour-card {
+        min-height: auto; /* Remove fixed height on mobile */
+    }
+    
+    .tour-content h3 {
+        min-height: auto; /* Remove fixed height on mobile */
+    }
+}
+
+
+
+
+
+
+
+
+
+/* Multi-currency pricing grid */
+.pricing-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.pricing-option {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+.option-title {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 8px;
+}
+
+.price {
+    font-weight: 700;
+    color: var(--accent);
+    font-size: 1.1rem;
+    margin-bottom: 2px;
+}
+
+.currency {
+    font-size: 0.8rem;
+    color: var(--gray);
+}
+
+.tour-highlights {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.tour-highlights h4 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: var(--primary);
+}
+
+.tour-highlights ul {
+    padding-left: 20px;
+    font-size: 0.9rem;
+    color: var(--gray);
+}
+
+.tour-highlights li {
+    margin-bottom: 5px;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    background: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: var(--transition);
+    margin-top: 15px;
+}
+
+.btn:hover {
+    background: #1a252f;
+}
+
+@media (max-width: 768px) {
+    .tours-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
 
 /* ====== TESTIMONIALS SECTION ====== */
 .testimonials-section {
